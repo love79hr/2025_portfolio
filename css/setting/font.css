@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* 어그로체 */
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* 나눔스퀘어 네오 */
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff2);
+font-weight: 400;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff2);
+font-weight: 700;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff2);
+font-weight: 800;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff2);
+font-weight: 900;
+font-display: swap;
+}
+
+/* 학교안심 가을소풍*/
+@font-face {
+  font-family: 'SchoolSafeAutumnTrip';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungL.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SchoolSafeAutumnTrip';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungB.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}

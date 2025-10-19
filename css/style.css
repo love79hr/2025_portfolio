@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* setting */
+@import url("./setting/font.css");
+@import url("./setting/vars.css");
+@import url("./setting/reset.css");
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+/* section */
+@import url("./section/header.css");
+@import url("./section/main.css");
+@import url("./section/about.css");
+@import url("./section/project.css");
+@import url("./section/contact.css");

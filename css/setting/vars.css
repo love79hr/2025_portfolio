@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+:root{
+
+  /* 폰트 지정 */
+  --main-font: 'Aggravo', sans-serif;
+  --sub-font: 'NanumSquareNeo', sans-serif;
+  --point-Eng: 'Whisper', sans-serif;
+  --point-Kor: 'SchoolSafeAutumnTrip', sans-serif;
+
+  /* 색상 지정 */
+  --main-color: #ffffff;
+  --text-color: #444444;
+  --point-color: #FF00BF;
+  --gradient-color: linear-gradient(to right, #E3FDF5, #FFE6FA);
+}
+
