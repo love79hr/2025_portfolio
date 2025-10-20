@@ -12,14 +12,9 @@
 .project_inner{
     width: 100%;
     height: 100vh;
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-}
-.swiper-wrapper{
-    position: relative;
 }
 .project_inner .h3{
     display: flex;
@@ -29,42 +24,49 @@
 
 .project_swiper{
     width: 100%;
-    height: 700px;
-}
-.project_slide{
-    width: 1380px;
-    height: 700px;
+    height: 70%;
+    padding: 5%;
     background-color: var(--main-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.swiper-wrapper{}
+.project_slide{
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    /* background-color: blue; */
 }
 
 .project_img{
-    width: 960px;
-    height: 540px;
+    width: 80%;
+    height: auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    object-fit: cover;
+    /* border: 1px solid #dadada; */
+    /* overflow: hidden; */
+    padding: 2%;
 }
 .project_img img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .project_text{
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    bottom: 15%;
+    right: 5%;
+    /* transform: translateY(-50%); */
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
-    /* border: 1px solid #dadada; */
+    border: 1px solid #dadada;
     z-index: 3;
 }
     
 .project_text ul{
-    width: 300px;
+    width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -74,19 +76,19 @@
 .project_text ul li{
     font-family: var(--sub-font);
     /* font-size: 14px; */
-    font-size: clamp(12px, 1.5vw, 14px);
+    font-size: clamp(12px, 2vw, 14px);
 }
 
 .project_text ul li.p_type{
     /* font-size: 16px; */
-    font-size: clamp(13px, 1.5vw, 16px);
+    font-size: clamp(13px, 2vw, 16px);
     margin-bottom: 10%;
 }
 
 .project_text ul li.p_title{
     font-family: var(--main-font);
     /* font-size: 45px; */
-    font-size: clamp(28px, 1.5vw, 45px);
+    font-size: clamp(28px, 2vw, 45px);
     font-weight: 300;
 
 }
@@ -113,7 +115,7 @@
 .project_text ul li.p_link a{
     display: inline-block;
     /* font-size: 16px; */
-    font-size: clamp(13px, 1.5vw, 16px);
+    font-size: clamp(13px, 10vw, 16px);
     font-weight: 800;
     text-transform: uppercase;
     margin-right: 30px;
@@ -128,7 +130,7 @@
 
 .project_swiper .swiper-pagination{
     position: absolute;
-    right: 3%;
+    right: 5%;
 }
 .project_swiper .swiper-pagination span.swiper-pagination-bullet{
     width: 10px;
@@ -138,4 +140,88 @@
 }
 .project_swiper .swiper-pagination span.swiper-pagination-bullet-active{
     background-color: var(--point-color);
+}
+
+@media (max-width: 1440px){
+    .project_swiper{
+        height: 50vw;
+    }
+}
+@media (max-width: 1080px){
+    .project_swiper{
+        padding: 3%;
+    }
+    .project_text{
+        padding: 2%;
+    }
+    .project_text ul{
+        width: 240px;  
+    }
+}
+@media (max-width: 960px){    
+    .project_text{
+        bottom: 10%;
+        right: 7%;
+    }
+    .project_text ul{
+        width: 220px;  
+    }
+}
+@media (max-width: 870px){
+    .project_swiper{
+        height: 70%;
+    }
+    .project_slide{
+        border: 1px solid #dadada;
+    }
+    .project_img{
+        width: 100%;    
+        position: static;
+        transform: translateY(0);
+        padding: 2%;
+    }
+    .project_img img{ 
+    }
+    .project_text{
+        height: 200px;
+        margin: 0 2%;
+        position: static;
+        border: none;
+        border-top: 1px solid #dadada;
+        background-color: aquamarine;
+    }
+    .project_text ul{
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+    .project_text ul li{
+        font-size: 14px;
+    }
+    .project_text ul li.p_type{
+        margin-bottom: 0;
+        font-size: 16px;
+    }    
+    .project_text ul li.p_title{
+        font-size: 45px;
+    }    
+    .project_text ul li.p_desc{
+        margin-bottom: 0;
+        display: none;
+    }
+    .project_text ul li.p_stack{
+        margin-bottom: 0;
+        margin-top: 2%;
+    }
+    .project_text ul li.p_date{
+        margin-bottom: 0;
+    }
+    .project_text ul li.p_period{}    
+    .project_text ul li.p_link{
+        margin-top: 3%;
+        font-size: 16px;
+    }
+    .project_swiper .swiper-pagination{
+        right: 0.7%;
+    }
 }

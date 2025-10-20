@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper(".mySwiper", {
         direction: "vertical",
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 100,
         mousewheel: true,
         keyboard: {
             enabled: true,
@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         loop: true,
         // autoplay: {
-        //     delay: 9000,
+        //     delay: 7000,
         //     disableOnInteraction: false,
         // },
+        breakpoints: {
+            870: {
+                spaceBetween: 30,
+            },
+        },
     });
 });

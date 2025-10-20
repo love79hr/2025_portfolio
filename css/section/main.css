@@ -13,7 +13,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 8.5%;
     z-index: 1;
 }
 .main_inner p{
@@ -21,7 +20,10 @@
     font-size: clamp(60px, 15vw, 130px);
     color: var(--point-color);
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media (max-width: 1440px) {}
+@media (max-width: 1080px) {}

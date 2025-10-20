@@ -76,7 +76,7 @@ body,html{
 
 .h1{
   /* font-size: 150px; */
-  font-size: clamp(50px, 15vw, 150px);
+  font-size: clamp(50px, 25vw, 150px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--text-color);
@@ -85,7 +85,7 @@ body,html{
 }
 .h2{
   /* font-size: 150px; */
-  font-size: clamp(50px, 15vw, 150px);
+  font-size: clamp(50px, 25vw, 150px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--main-color);
@@ -94,10 +94,20 @@ body,html{
   text-transform: uppercase;
 }
 .h3{
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(30px, 15vw, 80px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--main-color);
   -webkit-text-stroke: 2px var(--text-color);
   text-transform: uppercase;
+}
+
+
+
+/* media query */
+@media (max-width: 1080px) {
+  .h1,
+  .h2{
+      font-size: clamp(50px, 15vw, 120px);
+  }
 }

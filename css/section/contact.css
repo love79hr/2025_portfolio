@@ -30,3 +30,9 @@
     font-size: clamp(50px, 15vw, 120px);
     margin-top: 5%;
 }
+
+@media (max-width: 1080px){
+    .contact_inner .h2{
+        font-size: clamp(50px, 15vw, 95px);
+    }
+}
