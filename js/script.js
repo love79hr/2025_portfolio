@@ -42,13 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateActiveNav() {
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav ul li');
+        const nav = document.querySelector('.nav');
+        
+        // 동적으로 nav 높이 감지
+        const navHeight = nav ? nav.offsetHeight : 100;
         
         let currentSection = '';
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            const scrollPosition = window.pageYOffset + 100; // 헤더 높이 고려
+            const scrollPosition = window.pageYOffset + navHeight; // 동적 nav 높이 고려
             
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 currentSection = section.getAttribute('id');
