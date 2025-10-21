@@ -19,26 +19,23 @@
 }
 
 @media (max-width: 1440px) {}
-@media (max-width: 960px) {
-    #main{
-        height: 800px;
-    }
-    .main_inner .point_text{
+@media (max-width: 960px) {    
+    /* .main_inner .point_text{
         top: 35%;
-    }
+    } */
 }
 @media (max-width: 768px){
-    #main{
+    /* #main{
         height: 600px;
-    }
+    } */
 }
 @media (max-width: 480px){
-    #main{
+    /* #main{
         height: 500px;
-    }
+    } */
 }
 @media (max-width: 320px){
-    #main{
+    /* #main{
         height: 400px;
-    }
+    } */
 }

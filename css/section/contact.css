@@ -20,34 +20,37 @@
 .contact_inner .h2{
     font-size: clamp(30px, 12vw, 120px);
 }
+
+
+
 @media (max-width: 1080px){
     .contact_inner .h2{
         font-size: clamp(40px, 10vw, 100px);
     }
 }
 @media (max-width: 960px){
-    #contact{
+    /* #contact{
         height: 800px;
-    }
+    } */
     .contact_inner .point_text{
         top: 15%;
     }
 }
 @media (max-width: 768px){
-    #contact{
+    /* #contact{
         height: 600px;
-    }
+    } */
 }
 @media (max-width: 480px){
-    #contact{
+    /* #contact{
         height: 500px;
-    }
+    } */
     .contact_inner .h2{
         font-size: clamp(25px, 10vw, 40px);
     }
 }
 @media (max-width: 320px){
-    #contact{
+    /* #contact{
         height: 400px;
-    }
+    } */
 }
