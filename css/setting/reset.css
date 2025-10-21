@@ -67,6 +67,7 @@ body,html{
   width: 1440px;
   margin: 0 auto;
   padding: 0 3%;
+  /* background-color: rgba(0,255,0,0.2)  */
 }
 @media (max-width: 1440px) {
   .container{
@@ -75,39 +76,74 @@ body,html{
 }
 
 .h1{
+  width: 100%;
   /* font-size: 150px; */
-  font-size: clamp(50px, 25vw, 150px);
+  font-size: clamp(50px, 15vw, 150px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--text-color);
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .h2{
+  width: 100%;
   /* font-size: 150px; */
-  font-size: clamp(50px, 25vw, 150px);
+  font-size: clamp(50px, 12vw, 150px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--main-color);
   -webkit-text-stroke: 2px var(--text-color);
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 3%;
 }
 .h3{
-  font-size: clamp(30px, 15vw, 80px);
+  font-size: clamp(30px, 12vw, 80px);
   font-family: var(--main-font);
   font-weight: 700;
   color: var(--main-color);
   -webkit-text-stroke: 2px var(--text-color);
   text-transform: uppercase;
+  white-space: nowrap;
+}
+.point_text{
+  font-family: var(--point-Eng);
+    font-size: clamp(60px, 12vw, 130px);
+    color: var(--point-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 
 
 /* media query */
 @media (max-width: 1080px) {
-  .h1,
-  .h2{
-      font-size: clamp(50px, 15vw, 120px);
+  .h1, .h2{
+      font-size: clamp(40px, 12vw, 110px);
+  }
+}
+@media (max-width: 1000px){
+  .h3{
+    font-size: clamp(40px, 12vw, 70px);
+  }
+  .point_text{
+    font-size: clamp(30px, 12vw, 120px);
+  }
+}
+@media (max-width: 870px){
+  /* .h3{font-size: 65px;} */
+}
+@media (max-width: 768px){
+  .h2, .h3{
+    -webkit-text-stroke: 1px var(--text-color);
+  }
+}
+@media (max-width: 480px){
+  .h3{
+    font-size: 35px;
   }
 }

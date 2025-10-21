@@ -8,33 +8,42 @@
     background-size: 100% 50%;
     background-position: top center;
     background-repeat: no-repeat;
-}
-.about_inner{
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8.5%;
+}
+.about_inner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     transition: transform 0.1s ease-out;
+    /* background-color: aqua; */
 }
 .me_img{
-    width: 30%;
-    height: auto;
-    margin-right: 5%;
+    /* width: 35%; */
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me_img img{
+    width: 100%;
 }
 
 .me_text{
-    width: 54.44%;
-    height: auto;
+    /* width: 60%; */
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 2%;
 }
 .me_text .h3{
-    margin-bottom: 13%;
+    margin-bottom: 5%;
 }
 .me_text p{
     font-family: var(--point-Kor);
@@ -57,7 +66,7 @@
 .me_info ul li{
     font-family: var(--sub-font);
     /* font-size: 24px; */
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(13px, 2vw, 24px);
     font-weight: 800;
     line-height: 2;
 }
@@ -87,10 +96,54 @@
         margin-bottom: 10%;
     }
     .me_text p{
-        margin-bottom: 8%;
+        margin-bottom: 10%;
+        font-size: clamp(18px, 3vw, 30px);
     }
     .me_info ul.info_list::before{
         top: 5%;
         height: 90%;
+    }
+}
+
+@media (max-width: 1000px){}
+@media (max-width: 768px){
+    #about{
+        height: 800px;
+    }
+    .about_inner{
+        flex-direction: column;
+    }
+    .me_img{
+        width: 100%;
+        margin-right: 0;
+    }
+    .me_img img{
+        width: 40%;
+    }
+    .me_text{
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .me_text .h3{
+        margin-bottom: 0;
+        margin: 4% 0;
+    }
+    .me_text p{
+        margin-bottom: 5%;
+    }
+    .me_info{
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    #about{
+        height: 700px;
+    }
+}
+@media (max-width: 320px){
+    #about{
+        height: 500px;
     }
 }

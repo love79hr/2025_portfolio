@@ -5,25 +5,40 @@
     background-size: 50% 100%;
     background-position: left bottom;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main_inner{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    height: 50%;
+    position: relative;
 }
-.main_inner p{
-    font-family: var(--point-Eng);
-    font-size: clamp(60px, 15vw, 130px);
-    color: var(--point-color);
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translateX(-50%);
+.main_inner .point_text{
+    top: 40%;
 }
 
 @media (max-width: 1440px) {}
-@media (max-width: 1080px) {}
+@media (max-width: 960px) {
+    #main{
+        height: 800px;
+    }
+    .main_inner .point_text{
+        top: 35%;
+    }
+}
+@media (max-width: 768px){
+    #main{
+        height: 600px;
+    }
+}
+@media (max-width: 480px){
+    #main{
+        height: 500px;
+    }
+}
+@media (max-width: 320px){
+    #main{
+        height: 400px;
+    }
+}

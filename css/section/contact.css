@@ -5,34 +5,49 @@
     background-size: 50% 100%;
     background-position: right bottom;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact_inner{    
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8.5%;
-    z-index: 1;
+    height: 100%;
     position: relative;
 }
-.point_text{
-    font-family: var(--point-Eng);
-    font-size: clamp(60px, 15vw, 130px);
-    color: var(--point-color);
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translateX(-50%);
+.point_text{    
+    top: 20%;
 }
 .contact_inner .h2{
-    font-size: clamp(50px, 15vw, 120px);
-    margin-top: 5%;
+    font-size: clamp(30px, 12vw, 120px);
 }
-
 @media (max-width: 1080px){
     .contact_inner .h2{
-        font-size: clamp(50px, 15vw, 95px);
+        font-size: clamp(40px, 10vw, 100px);
+    }
+}
+@media (max-width: 960px){
+    #contact{
+        height: 800px;
+    }
+    .contact_inner .point_text{
+        top: 15%;
+    }
+}
+@media (max-width: 768px){
+    #contact{
+        height: 600px;
+    }
+}
+@media (max-width: 480px){
+    #contact{
+        height: 500px;
+    }
+    .contact_inner .h2{
+        font-size: clamp(25px, 10vw, 40px);
+    }
+}
+@media (max-width: 320px){
+    #contact{
+        height: 400px;
     }
 }
