@@ -157,9 +157,9 @@
     }
 }
 @media (max-width: 960px){
-    #project{
+    /* #project{
         height: 1000px;
-    }
+    } */
     .project_inner{
         height: 80%;
     }
