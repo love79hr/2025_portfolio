@@ -32,6 +32,11 @@
         top: 15%;
     }
 }
+@media (max-width: 600px){
+    #contact{
+        height: 850px;
+    }
+}
 @media (max-width: 768px){}
 @media (max-width: 480px){
     .contact_inner .h2{

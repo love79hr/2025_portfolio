@@ -20,10 +20,7 @@
 
 /* 미디어 쿼리 */
 @media (max-width: 600px){
-    #main,
-    #about,
-    #project,
-    #contact{
-        height: 800px;
+    #main{
+        height: 850px;
     }
 }   
