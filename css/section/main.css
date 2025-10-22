@@ -18,24 +18,9 @@
     top: 40%;
 }
 
+/* 미디어 쿼리 */
 @media (max-width: 1440px) {}
-@media (max-width: 960px) {    
-    /* .main_inner .point_text{
-        top: 35%;
-    } */
-}
-@media (max-width: 768px){
-    /* #main{
-        height: 600px;
-    } */
-}
-@media (max-width: 480px){
-    /* #main{
-        height: 500px;
-    } */
-}
-@media (max-width: 320px){
-    /* #main{
-        height: 400px;
-    } */
-}
+@media (max-width: 960px) {}
+@media (max-width: 768px){}
+@media (max-width: 480px){}
+@media (max-width: 320px){}

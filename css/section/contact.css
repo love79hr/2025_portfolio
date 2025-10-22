@@ -22,35 +22,20 @@
 }
 
 
-
+/* 미디어 쿼리 */
 @media (max-width: 1080px){
     .contact_inner .h2{
         font-size: clamp(40px, 10vw, 100px);
     }
 }
-@media (max-width: 960px){
-    /* #contact{
-        height: 800px;
-    } */
-    .contact_inner .point_text{
+@media (max-width: 960px){.contact_inner .point_text{
         top: 15%;
     }
 }
-@media (max-width: 768px){
-    /* #contact{
-        height: 600px;
-    } */
-}
+@media (max-width: 768px){}
 @media (max-width: 480px){
-    /* #contact{
-        height: 500px;
-    } */
     .contact_inner .h2{
         font-size: clamp(25px, 10vw, 40px);
     }
 }
-@media (max-width: 320px){
-    /* #contact{
-        height: 400px;
-    } */
-}
+@media (max-width: 320px){}

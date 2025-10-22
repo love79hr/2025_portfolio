@@ -105,11 +105,9 @@
     }
 }
 
+/* 미디어 쿼리 */
 @media (max-width: 1000px){}
 @media (max-width: 768px){
-    /* #about{
-        height: 800px;
-    } */
     .about_inner{
         flex-direction: column;
     }
@@ -137,13 +135,5 @@
         justify-content: center;
     }
 }
-@media (max-width: 480px){
-    /* #about{
-        height: 700px;
-    } */
-}
-@media (max-width: 320px){
-    /* #about{
-        height: 500px;
-    } */
-}
+@media (max-width: 480px){}
+@media (max-width: 320px){}
