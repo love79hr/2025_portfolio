@@ -24,6 +24,6 @@
     #about,
     #project,
     #contact{
-        height: 100dvh;
+        /* height: 100dvh; */
     }
 }   
