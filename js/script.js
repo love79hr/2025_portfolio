@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // 모든 nav 아이템에서 active 클래스 제거
         navItems.forEach(item => {
             item.classList.remove('active');
+            const link = item.querySelector('a');
+            if (link) {
+                link.classList.remove('active');
+            }
         });
         
         // 현재 섹션에 해당하는 nav 아이템에 active 클래스 추가
@@ -69,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const activeNavItem = document.querySelector(`.nav a[href="#${currentSection}"]`);
             if (activeNavItem) {
                 activeNavItem.parentElement.classList.add('active');
+                activeNavItem.classList.add('active');
             }
         }
     }
